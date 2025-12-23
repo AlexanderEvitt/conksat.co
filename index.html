@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 1. Set the background image on the whole page */
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+  }
+
+  .container {
+    /* Use the exact filename of your background image */
+    background-image: url("conkmoon.png"); 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures background covers the screen */
+    
+    /* 2. Center the foreground image using Flexbox */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+  }
+
+  /* 3. Adjust the foreground image size here */
+  .foreground-img {
+    width: 800px;           /* Set specific width (e.g., 300px or 50%) */
+    height: auto;           /* Maintains aspect ratio */
+    max-width: 90%;         /* Ensures responsiveness on mobile */
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Use the exact filename of your foreground image -->
+    <img src="title.png" alt="Centered Image" class="foreground-img">
+  </div>
+
+</body>
+</html>
